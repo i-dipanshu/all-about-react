@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import "../useState/useState.css";
 
-const useEffect = () => {
+const UpdateTitle = () => {
+  const [count, setCount] = useState(1);
+
+  /* The function passed to useEffect will run every time after the render is committed to the screen. */
+  useEffect(() => {
+    (document.title = `Chats (${count})`);
+  });
+
   return (
-    <div>useEffect</div>
-  )
-}
+    <div>
+      <h1>{count}</h1>
+      <button onClick={() => setCount(count + 1)}>Click Me</button>
+    </div>
+  );
+};
 
-export default useEffect
+export default UpdateTitle;
