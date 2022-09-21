@@ -10,9 +10,9 @@ const UpdateTitle = () => {
   });
 
   return (
-    <div>
+    <div className="main">
       <h1>{count}</h1>
-      <button onClick={() => setCount(count + 1)}>Click Me</button>
+      <button onClick={() => setCount(count + 1)} className="btn">Click Me</button>
     </div>
   );
 };

@@ -10,3 +10,35 @@
     display: flex;
     justify-content: center;
 }
+.nav > h1 {
+    margin-left: 10px;
+
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main > h1 {
+  text-align: center;
+  margin: 10px;
+  font-size: 80px;
+}
+
+.btn {
+  color: rgb(200, 150, 150);
+  width: 10vmax;
+  height: 3vmax;
+  font-size: x-large;
+  border: 2px solid rgb(255, 255, 16);
+  border-radius: 2rem;
+  cursor: pointer;
+  margin-top: 2vmax;
+}
+
+.btn:hover {
+    color:rgb(112, 46, 46);
+}
