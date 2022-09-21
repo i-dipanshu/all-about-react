@@ -65,8 +65,8 @@ const Toggle = () => {
 
 ```
 - Cleanup function
-  - Helps in getting memory free with continous useEffect function stack
-  - Below reprensts an example of removing the method from the stack after it is rendered
+  - Helps in getting memory free with continuos useEffect function stack
+  - Below represents an example of removing the method from the stack after it is rendered
 ```javascript
 const [width, setWidth] = useState(window.innerWidth);
 
