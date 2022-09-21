@@ -63,5 +63,22 @@ const Toggle = () => {
     document.title = `Chats${count}`; 
   }, [count])
 
+```
+- Cleanup function
+  - Helps in getting memory free with continous useEffect function stack
+  - Below reprensts an example of removing the method from the stack after it is rendered
+```javascript
+const [width, setWidth] = useState(window.innerWidth);
+
+  const getWidth = () => setWidth(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", getWidth);
+
+    // runs after the component is rendered
+    return () => {
+      window.removeEventListener("resize", getWidth);
+    };
+  }, [width]);
 
 ```
