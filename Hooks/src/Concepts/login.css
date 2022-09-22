@@ -1,0 +1,27 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: 10px;
+    padding: 10px;
+}
+
+.email {
+    background-color: rgb(27, 27, 97);
+    margin: 10px;
+}
+
+
+
+.email > input{
+    background-color: rgb(27, 27, 97);
+    font-size: 75px;
+    text-align: center;
+}
+
+.password > input{
+    font-size: 75px;
+    text-align: center;
+}
